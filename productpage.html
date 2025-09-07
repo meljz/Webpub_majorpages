@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<title>Minimal Featured</title>
+</head>
+<body class="product_page">
+
+ <header>
+    <div class="logo">
+      <img src="image/LOGO.png" alt="Precy Plastic Wares Logo" />
+    </div>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html" >About</a>
+      <a href="featured.html">Featured</a>
+      <a href="productpage.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+  </header>
+
+<main>
+  <section class="product_section" id="products">
+    <h2>Products</h2>
+    <p>Take a closer look at our products, store, and happy customers!</p>
+
+    <!-- Filters -->
+    <div class="product-filters">
+      <label for="filter-price">Price:</label>
+      <select id="filter-price">
+        <option value="all">All</option>
+        <option value="under200">Under ₱200</option>
+        <option value="200to350">₱200 - ₱350</option>
+        <option value="above350">Above ₱350</option>
+      </select>
+
+      <label for="filter-color">Color:</label>
+      <select id="filter-color">
+        <option value="all">All</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select>
+
+      <label for="filter-brand">Brand:</label>
+      <select id="filter-brand">
+        <option value="all">All</option>
+        <option value="precy">Precy</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="filter-name">Name:</label>
+      <input type="text" id="filter-name" placeholder="Search product name">
+
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="default">Default</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A → Z</option>
+        <option value="name-desc">Name: Z → A</option>
+      </select>
+    </div>
+
+    <div class="product-grid" id="productList"></div>
+  </section>
+
+
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Precy Plastic Wares. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
